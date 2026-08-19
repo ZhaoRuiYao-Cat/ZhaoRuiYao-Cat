@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <title>赵睿垚 ZhaoRuiYao — 前端工程师与游戏开发者</title>
+  <meta name="description" content="赵睿垚（ZhaoRuiYao）的个人网站。Web 前端（Vue、Nuxt）、微信小程序、Java/C，以及 Unity 与 C# 游戏开发，开放合作中。">
+  <meta property="og:title" content="赵睿垚 ZhaoRuiYao — 前端工程师与游戏开发者">
+  <meta property="og:description" content="Web 前端、微信小程序与 Unity 游戏开发。开放合作中。">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>[data-step]{opacity:1 !important;transform:none !important;}</style></noscript>
+</head>
+<body>
+
+  
+  <div class="bg-dots" aria-hidden="true"></div>
+
+  
+  <div class="loader" id="loader" aria-hidden="true">
+    <p class="loader-text"><span data-zh="请稍后" data-en="Loading">请稍后</span><span class="lt-dots"><i>.</i><i>.</i><i>.</i></span></p>
+  </div>
+
+  
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home">赵睿垚<span class="brand-sub">ZhaoRuiYao</span></a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#about" data-zh="关于" data-en="About">关于</a>
+      <a href="#services" data-zh="方向" data-en="Services">方向</a>
+      <a href="#collab" data-zh="合作" data-en="Work">合作</a>
+      <a href="#more" data-zh="其他" data-en="More">其他</a>
+      <a href="#journey" data-zh="历程" data-en="Journey">历程</a>
+      <a href="#contact" data-zh="联系" data-en="Contact">联系</a>
+    </nav>
+    <select class="lang-select nav-cta" id="langSelect" aria-label="选择语言">
+      <option value="zh" selected>中文</option>
+      <option value="en">English</option>
+    </select>
+  </header>
+
+  <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span>
+  </button>
+
+  
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mm-links" aria-label="移动端导航">
+      <a href="#home" style="--d:.05s" data-zh="首页" data-en="Home">首页</a>
+      <a href="#about" style="--d:.12s" data-zh="关于" data-en="About">关于</a>
+      <a href="#services" style="--d:.19s" data-zh="方向" data-en="Services">方向</a>
+      <a href="#collab" style="--d:.26s" data-zh="合作" data-en="Work">合作</a>
+      <a href="#more" style="--d:.33s" data-zh="其他" data-en="More">其他</a>
+      <a href="#journey" style="--d:.40s" data-zh="历程" data-en="Journey">历程</a>
+      <a href="#contact" style="--d:.47s" data-zh="联系" data-en="Contact">联系</a>
+    </nav>
+    <div class="mm-foot">
+      <a class="mm-mail" href="mailto:zhaoruiyao7007@gmail.com">zhaoruiyao7007@gmail.com</a>
+      <p data-zh="前端开发 · 游戏开发 · 开放合作" data-en="Front-end · Game Dev · Open to work">前端开发 · 游戏开发 · 开放合作</p>
+      <select class="lang-select mm-lang" id="mmLangSelect" aria-label="选择语言">
+        <option value="zh" selected>中文</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+  </div>
+
+  <main>
+
+    
+    <section class="hero section" id="home" data-section="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-a" data-speed="0.12"></div>
+        <div class="orb orb-b" data-speed="-0.08"></div>
+        <div class="grid-lines"></div>
+        <div class="hero-watermark" data-speed="0.06">垚</div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-photo-wrap" data-step style="--d:.2s">
+          <img class="hero-photo" src="assets/images/hero-photo.png" alt="赵睿垚">
+        </div>
+
+        <div class="hero-main">
+          <h1 class="hero-title" aria-label="赵睿垚">
+            <span class="line"><span class="line-inner">赵睿垚</span></span>
+          </h1>
+
+          <div class="hero-role-row" data-step style="--d:.28s">
+            <p class="hero-sub" data-zh="专注于 Web 前端、小程序与游戏开发，以工程能力交付可靠的产品。" data-en="Focused on web front-end, mini-programs and game development, delivering reliable products with solid engineering.">专注于 Web 前端、小程序与游戏开发，以工程能力交付可靠的产品。</p>
+          </div>
+
+          <div class="hero-actions" data-step style="--d:.42s">
+            <a class="btn btn-accent" href="#collab" data-zh="开始合作" data-en="Start a Project">开始合作</a>
+            <a class="btn btn-ghost" href="#services" data-zh="看看我能做什么" data-en="What I Do">看看我能做什么</a>
+          </div>
+
+          <ul class="hero-chips" data-step style="--d:.5s">
+            <li><a href="#services">Vue · Nuxt</a></li>
+            <li><a href="#services">微信小程序</a></li>
+            <li><a href="#services">Java · C</a></li>
+            <li><a href="#services">Unity · C#</a></li>
+          </ul>
+
+          <ul class="hero-meta" data-step style="--d:.56s">
+            <li data-zh="专注前端与游戏开发" data-en="Front-end & Game Development">专注前端与游戏开发</li>
+            <li>zhaoruiyao7007@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>滚动</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    
+    <section class="about section" id="about" data-section="about">
+      <div class="container about-grid">
+        <div class="about-left">
+          <p class="sec-eyebrow" data-step data-zh="01 · 关于" data-en="01 · About">01 · 关于</p>
+          <h2 class="sec-title" data-step style="--d:.08s" data-zh="把复杂，<br>做成简单。" data-en="Make the<br>complex simple.">把复杂，<br>做成简单。</h2>
+        </div>
+        <div class="about-right">
+          <p class="about-lead" data-step data-zh="你好，我是赵睿垚（ZhaoRuiYao），一名前端工程师与游戏开发者。" data-en="Hi, I'm Zhao RuiYao — a front-end engineer and game developer.">你好，我是赵睿垚（ZhaoRuiYao），一名前端工程师与游戏开发者。</p>
+          <p data-step style="--d:.08s" data-zh="我负责现代 Web 应用的前端开发，技术栈覆盖 HTML、CSS、JavaScript、Vue 与 Nuxt，并独立完成微信小程序项目；熟悉 Java 与 C，具备从前端到后端的完整技术视野。" data-en="I build modern web applications with HTML, CSS, JavaScript, Vue and Nuxt, and deliver WeChat mini-programs independently. I'm also familiar with Java and C, with a full-stack view from front-end to back-end.">我负责现代 Web 应用的前端开发，技术栈覆盖 HTML、CSS、JavaScript、Vue 与 Nuxt，并独立完成微信小程序项目；熟悉 Java 与 C，具备从前端到后端的完整技术视野。</p>
+          <p data-step style="--d:.16s" data-zh="同时使用 Unity 与 C# 进行游戏开发，覆盖从原型到完整玩法的落地。注重代码质量与工程规范，确保产品清晰、可维护、体验稳定。" data-en="I also develop games with Unity and C#, covering everything from prototype to full release. I value code quality and engineering standards to keep products clean, maintainable and stable.">同时使用 Unity 与 C# 进行游戏开发，覆盖从原型到完整玩法的落地。注重代码质量与工程规范，确保产品清晰、可维护、体验稳定。</p>
+
+          <div class="stats">
+            <div class="stat" data-step>
+              <p><span class="stat-num" data-count="5">0</span><span class="stat-suffix">+</span></p>
+              <span class="stat-label" data-zh="年开发经验" data-en="Years of Experience">年开发经验</span>
+            </div>
+            <div class="stat" data-step style="--d:.08s">
+              <p><span class="stat-num" data-count="12">0</span><span class="stat-suffix">+</span></p>
+              <span class="stat-label" data-zh="个完成项目" data-en="Projects Done">个完成项目</span>
+            </div>
+            <div class="stat" data-step style="--d:.16s">
+              <p><span class="stat-num" data-count="5">0</span><span class="stat-suffix"></span></p>
+              <span class="stat-label" data-zh="项技术方向" data-en="Tech Fields">项技术方向</span>
+            </div>
+            <div class="stat" data-step style="--d:.24s">
+              <p><span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span></p>
+              <span class="stat-label" data-zh="认真对待每个细节" data-en="Attention to Detail">认真对待每个细节</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="services section" id="services" data-section="services">
+      <div class="container">
+        <p class="sec-eyebrow" data-step data-zh="02 · 方向" data-en="02 · Services">02 · 方向</p>
+        <h2 class="sec-title" data-step style="--d:.08s" data-zh="我能为你做什么" data-en="What I Can Do">我能为你做什么</h2>
+
+        <div class="svc-grid">
+          <div class="svc-row">
+            <a class="svc-card" href="#collab" data-step>
+              <span class="svc-num">01</span>
+              <h3 data-zh="Web 前端开发" data-en="Web Front-end">Web 前端开发</h3>
+              <p data-zh="基于 Vue 与 Nuxt 构建高性能响应式 Web 应用，注重工程化与用户体验。" data-en="Building high-performance responsive web apps with Vue and Nuxt, focused on engineering and UX.">基于 Vue 与 Nuxt 构建高性能响应式 Web 应用，注重工程化与用户体验。</p>
+              <span class="svc-tags">Vue · Nuxt · HTML/CSS/JS</span>
+            </a>
+            <a class="svc-card" href="#collab" data-step style="--d:.1s">
+              <span class="svc-num">02</span>
+              <h3 data-zh="微信小程序" data-en="Mini Programs">微信小程序</h3>
+              <p data-zh="独立负责微信小程序从需求分析到上线的完整开发流程。" data-en="Owning the full mini-program lifecycle, from requirements to launch.">独立负责微信小程序从需求分析到上线的完整开发流程。</p>
+              <span class="svc-tags">微信小程序 · 原生开发</span>
+            </a>
+          </div>
+          <div class="svc-row">
+            <a class="svc-card" href="#collab" data-step style="--d:.2s">
+              <span class="svc-num">03</span>
+              <h3 data-zh="后端与原生" data-en="Backend & Native">后端与原生</h3>
+              <p data-zh="使用 Java 与 C 实现服务端逻辑与底层程序，保障系统可靠性与性能。" data-en="Implementing server logic and low-level programs with Java and C, ensuring reliability and performance.">使用 Java 与 C 实现服务端逻辑与底层程序，保障系统可靠性与性能。</p>
+              <span class="svc-tags">Java · C</span>
+            </a>
+            <a class="svc-card" href="#collab" data-step style="--d:.3s">
+              <span class="svc-num">04</span>
+              <h3 data-zh="游戏开发" data-en="Game Development">游戏开发</h3>
+              <p data-zh="基于 Unity 与 C# 完成游戏原型与正式版本开发，覆盖完整制作流程。" data-en="Developing game prototypes and releases with Unity and C#, covering the full pipeline.">基于 Unity 与 C# 完成游戏原型与正式版本开发，覆盖完整制作流程。</p>
+              <span class="svc-tags">Unity · C#</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="collab section" id="collab" data-section="collab">
+      <div class="container">
+        <p class="sec-eyebrow" data-step data-zh="03 · 合作" data-en="03 · Work">03 · 合作</p>
+        <h2 class="sec-title" data-step style="--d:.08s" data-zh="好的合作，<br>从一次对话开始。" data-en="Great work starts<br>with a conversation.">好的合作，<br>从一次对话开始。</h2>
+
+        <div class="collab-steps">
+          <div class="cstep" data-step>
+            <span class="cstep-num">01</span>
+            <h3 data-zh="沟通" data-en="Discuss">沟通</h3>
+            <p data-zh="明确需求、目标与时间安排，对齐项目边界与预期。" data-en="Clarify needs, goals and timeline; align scope and expectations.">明确需求、目标与时间安排，对齐项目边界与预期。</p>
+          </div>
+          <div class="cstep" data-step style="--d:.1s">
+            <span class="cstep-num">02</span>
+            <h3 data-zh="提案" data-en="Proposal">提案</h3>
+            <p data-zh="评估后提供技术方案、排期与报价，双方确认后启动。" data-en="Provide a technical plan, schedule and quote, then kick off.">评估后提供技术方案、排期与报价，双方确认后启动。</p>
+          </div>
+          <div class="cstep" data-step style="--d:.2s">
+            <span class="cstep-num">03</span>
+            <h3 data-zh="执行" data-en="Build">执行</h3>
+            <p data-zh="按里程碑分阶段推进，定期同步进度并持续评审。" data-en="Deliver in milestones, sync progress and review continuously.">按里程碑分阶段推进，定期同步进度并持续评审。</p>
+          </div>
+          <div class="cstep" data-step style="--d:.3s">
+            <span class="cstep-num">04</span>
+            <h3 data-zh="交付" data-en="Deliver">交付</h3>
+            <p data-zh="完成测试与上线支持，交付源码、文档与维护说明。" data-en="Ship with testing and launch support, plus source, docs and maintenance notes.">完成测试与上线支持，交付源码、文档与维护说明。</p>
+          </div>
+        </div>
+
+        <div class="cta-panel" data-step style="--d:.15s">
+          <div class="cta-inner">
+            <p class="cta-eyebrow" data-zh="现在开放合作" data-en="Available for Projects">现在开放合作</p>
+            <h3 data-zh="有一个项目需要<br>可靠的开发者？" data-en="Have a project that<br>needs a developer?">有一个项目需要<br>可靠的开发者？</h3>
+            <a class="cta-link" href="mailto:zhaoruiyao7007@gmail.com">zhaoruiyao7007@gmail.com</a>
+            <p class="cta-note" data-zh="回复通常在 24 小时内。来信请附上项目背景、需求与期望时间。" data-en="I usually reply within 24 hours. Please include project background, needs and timeline.">回复通常在 24 小时内。来信请附上项目背景、需求与期望时间。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="more section" id="more" data-section="more">
+      <div class="container">
+        <p class="sec-eyebrow" data-step data-zh="04 · 其他" data-en="04 · More">04 · 其他</p>
+        <h2 class="sec-title" data-step style="--d:.08s" data-zh="除了开发，<br>我也做这些。" data-en="Beyond coding,<br>I also do this.">除了开发，<br>我也做这些。</h2>
+
+        <div class="more-grid">
+          <a class="more-card" href="#contact" data-step>
+            <span class="more-num">01</span>
+            <h3 data-zh="短剧" data-en="Short Drama">短剧</h3>
+            <p data-zh="参与短剧的策划与制作，从脚本到成片，用内容讲故事。" data-en="Planning and producing short dramas, from script to final cut — telling stories with content.">参与短剧的策划与制作，从脚本到成片，用内容讲故事。</p>
+            <span class="more-tags">编剧 · 拍摄 · 剪辑</span>
+          </a>
+          <a class="more-card" href="#contact" data-step style="--d:.1s">
+            <span class="more-num">02</span>
+            <h3 data-zh="摄影" data-en="Photography">摄影</h3>
+            <p data-zh="记录真实瞬间，擅长人像与场景摄影，并完成后期调色成片。" data-en="Capturing real moments in portrait and scene photography, with post-production grading.">记录真实瞬间，擅长人像与场景摄影，并完成后期调色成片。</p>
+            <span class="more-tags">人像 · 风光 · 后期</span>
+          </a>
+          <a class="more-card" href="#contact" data-step style="--d:.2s">
+            <span class="more-num">03</span>
+            <h3 data-zh="建模" data-en="3D Modeling">建模</h3>
+            <p data-zh="使用三维建模工具制作角色、场景与资产，服务于游戏与视觉。" data-en="Creating characters, scenes and assets with 3D tools for games and visuals.">使用三维建模工具制作角色、场景与资产，服务于游戏与视觉。</p>
+            <span class="more-tags">3D · 角色 · 场景</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="journey section" id="journey" data-section="journey">
+      <div class="container">
+        <p class="sec-eyebrow" data-step data-zh="05 · 历程" data-en="05 · Journey">05 · 历程</p>
+        <h2 class="sec-title" data-step style="--d:.08s" data-zh="走过的路，<br>每一步都算数。" data-en="Every step<br>of the way counts.">走过的路，<br>每一步都算数。</h2>
+
+        <div class="wordcloud">
+          <span class="wc-item wc-serif wc-ink" data-step style="--fs:2.2rem;--tilt:-1.2deg" data-zh="好的设计，是让一切看起来本该如此。" data-en="Good design makes everything look like it was meant to be.">好的设计，是让一切看起来本该如此。</span>
+          <span class="wc-item" data-step style="--fs:1.15rem;--mt:.4em;--d:.05s" data-zh="代码是设计的一种表达。" data-en="Code is a form of design.">代码是设计的一种表达。</span>
+          <span class="wc-item wc-serif wc-ink" data-step style="--fs:1.7rem;--tilt:1.8deg;--d:.1s" data-zh="细节决定成败。" data-en="Details decide outcomes.">细节决定成败。</span>
+          <span class="wc-item" data-step style="--fs:1rem;--mt:-.2em;--tilt:-2.5deg;--d:.15s" data-zh="简单，但不简陋。" data-en="Simple, never crude.">简单，但不简陋。</span>
+          <span class="wc-item wc-accent" data-step style="--fs:1.55rem;--tilt:2deg;--d:.2s" data-zh="克制，是最难的技巧。" data-en="Restraint is the hardest skill.">克制，是最难的技巧。</span>
+          <span class="wc-item wc-serif wc-ink" data-step style="--fs:1.9rem;--d:.25s" data-zh="设计是解决问题的方式。" data-en="Design is how you solve problems.">设计是解决问题的方式。</span>
+          <span class="wc-item" data-step style="--fs:1.05rem;--mt:.5em;--tilt:-1.5deg;--d:.3s" data-zh="让复杂变得简单。" data-en="Make complexity simple.">让复杂变得简单。</span>
+          <span class="wc-item wc-serif wc-accent" data-step style="--fs:1.65rem;--mt:-.3em;--tilt:-2deg;--d:.35s" data-zh="游戏是第九艺术。" data-en="Games are the ninth art.">游戏是第九艺术。</span>
+          <span class="wc-item" data-step style="--fs:1.3rem;--tilt:1.5deg;--d:.4s" data-zh="代码是写给未来的信。" data-en="Code is a letter to the future.">代码是写给未来的信。</span>
+          <span class="wc-item" data-step style="--fs:.95rem;--mt:.35em;--tilt:2.5deg;--d:.45s" data-zh="Bug 会过去，创意会留下。" data-en="Bugs fade; ideas remain.">Bug 会过去，创意会留下。</span>
+          <span class="wc-item wc-serif wc-ink" data-step style="--fs:1.35rem;--mt:-.25em;--d:.5s" data-zh="少即是多。" data-en="Less is more.">少即是多。</span>
+          <span class="wc-item" data-step style="--fs:1.2rem;--tilt:-2deg;--d:.55s" data-zh="框架会过时，基础永流传。" data-en="Frameworks fade; fundamentals last.">框架会过时，基础永流传。</span>
+          <span class="wc-item" data-step style="--fs:1.45rem;--mt:.2em;--tilt:1.2deg;--d:.6s" data-zh="好设计经得起时间。" data-en="Good design stands the test of time.">好设计经得起时间。</span>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="contact section" id="contact" data-section="contact">
+      <div class="container">
+        <div class="contact-card" data-step>
+          <p class="sec-eyebrow" data-step data-zh="06 · 联系" data-en="06 · Contact">06 · 联系</p>
+          <h2 class="sec-title" data-step style="--d:.08s" data-zh="一起合作？" data-en="Let's collaborate?">一起合作？</h2>
+          <a class="contact-mail" href="mailto:zhaoruiyao7007@gmail.com" data-step style="--d:.16s">zhaoruiyao7007@gmail.com</a>
+          <p class="contact-note" data-step style="--d:.24s" data-zh="如有项目需求、技术咨询或合作意向，欢迎来信，我会尽快回复。" data-en="For project needs, technical inquiries or collaboration ideas, feel free to reach out — I'll reply soon.">如有项目需求、技术咨询或合作意向，欢迎来信，我会尽快回复。</p>
+          <ul class="socials">
+            <li data-step><a href="https://github.com/ZhaoRuiYao-Cat">GitHub<span class="soc-arrow">&rarr;</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2025 赵睿垚 ZhaoRuiYao</span>
+      <span data-zh="前端开发 · 游戏开发" data-en="Front-end · Game Development">前端开发 · 游戏开发</span>
+    </div>
+  </footer>
+
+  
+  <nav class="step-dots" aria-label="章节导航">
+    <a class="step-dot" href="#home" data-target="home"><span class="sr-only">首页</span></a>
+    <a class="step-dot" href="#about" data-target="about"><span class="sr-only">关于</span></a>
+    <a class="step-dot" href="#services" data-target="services"><span class="sr-only">方向</span></a>
+    <a class="step-dot" href="#collab" data-target="collab"><span class="sr-only">合作</span></a>
+    <a class="step-dot" href="#more" data-target="more"><span class="sr-only">其他</span></a>
+    <a class="step-dot" href="#journey" data-target="journey"><span class="sr-only">历程</span></a>
+    <a class="step-dot" href="#contact" data-target="contact"><span class="sr-only">联系</span></a>
+  </nav>
+
+  <a class="to-top" href="#home" id="toTop" aria-label="回到顶部">&uarr;</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
