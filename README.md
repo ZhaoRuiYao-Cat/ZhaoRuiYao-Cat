@@ -1,74 +1,57 @@
-# 赵睿垚 ZhaoRuiYao
+# 赵睿垚 Zhao RuiYao
+### 前端工程师 · 交互与游戏开发者
 
-<p align="center">
-  <img src="https://img.shields.io/badge/前端工程师-0e0e0c?style=for-the-badge&logo=vuedotjs&logoColor=e52521" alt="前端工程师">
-  <img src="https://img.shields.io/badge/游戏开发者-0e0e0c?style=for-the-badge&logo=unity&logoColor=ffffff" alt="游戏开发者">
-  <img src="https://img.shields.io/badge/微信小程序-0e0e0c?style=for-the-badge&logo=wechat&logoColor=07c160" alt="微信小程序">
-  <img src="https://img.shields.io/badge/摄影·建模·短剧-0e0e0c?style=for-the-badge&logo=camera&logoColor=e52521" alt="摄影建模短剧">
-</p>
+专注于 Web 前端架构、微信小程序与 Unity 交互开发。拥有 5+ 年软件研发实践，累计交付 12+ 个商业与工程项目。打通「现代代码工程 × 3D 资产管线 × 影视视觉多媒体」全链路，致力于以严谨的代码架构与高质感的视觉表达构建卓越的数字化交互体验。
 
-你好，我是**赵睿垚（ZhaoRuiYao）**，一名前端工程师与游戏开发者。
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat-square&logo=vuedotjs&logoColor=4FC08D)
+![Nuxt.js](https://img.shields.io/badge/Nuxt.js-002E3B?style=flat-square&logo=nuxtdotjs&logoColor=00DC82)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![WeChat](https://img.shields.io/badge/WeChat_Mini_Program-07C160?style=flat-square&logo=wechat&logoColor=white)
+![Unity](https://img.shields.io/badge/Unity-100000?style=flat-square&logo=unity&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white)
 
-> 专注于 Web 前端、小程序与游戏开发，以工程能力交付可靠的产品。
-> 也喜欢用镜头和模型记录与创造——短剧、摄影、3D 建模，都是我生活的一部分。
+[![Email](https://img.shields.io/badge/Email-zhaoruiyao7007%40gmail.com-181717?style=flat-square&logo=gmail&logoColor=white)](mailto:zhaoruiyao7007@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-ZhaoRuiYao--Cat-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ZhaoRuiYao-Cat)
 
----
+## 01. 核心研发与交付能力
 
-## 技术栈
+**现代 Web 前端与服务端协同**
+基于 Vue 和 Nuxt 体系构建高内聚、模块化的现代 Web 应用。深入理解浏览器渲染机制与前端工程化工作流，专注于首屏加速、运行时性能调优与多端响应式适配。同时具备 Java 服务端开发与 C 语言底层原理认知，能够从全栈视角定义严密的数据契约并高效推进端到端 API 联调。
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,vue,nuxt,java,c,cs,unity" alt="技术栈图标">
-</p>
+**微信小程序全周期落地**
+具备小程序从零架构、功能研发到平台审核过审的完整闭环经验。深入理解微信生态底层特性与运行机制，能够针对移动端弱网环境、分包加载策略以及内存占用进行针对性优化，保证在各层级移动设备上的稳定与流畅。
 
----
+**Unity 交互与游戏开发**
+精通基于 Unity 和 C# 的交互逻辑架构。擅长玩法状态机设计、UI 交互框架构建与核心系统研发。能够独立完成 3D 美术资产的引擎集成、材质管线适配以及渲染性能排查，重点针对 Draw Call、多边形面数与帧率波动进行系统调优。
 
-## 我能做什么
+## 02. 跨学科视觉赋能
 
-### Web 前端开发
+**打通程序开发与美术管线的零损耗协作**
+在纯工程开发之外，长期深耕 3D 资产建模、商业摄影与影视短剧制作。能够独立产出符合游戏引擎规范的三维模型资产，并在材质、贴图与布线阶段提前规避渲染性能缺陷。
 
-基于 Vue 与 Nuxt 构建高性能响应式 Web 应用，注重工程化与用户体验。从页面骨架到交互动效，关注性能、可访问性与代码可维护性，让产品在浏览器里流畅、可靠、耐看。
+**影像级审美驱动交互质感**
+将镜头语言、分镜节奏与专业调色经验反哺至 UI/UX 动效与排版设计中。不仅关注代码逻辑的健壮性，更对产品在色彩平衡、微交互动效和视觉质感上有严苛标准，让技术产品兼具工程深度与美学表达。
 
-### 微信小程序
+## 03. 工程原则与交付标准
 
-独立负责微信小程序从需求分析到上线的完整开发流程。了解小程序平台的能力边界与审核规范，能够在有限的技术空间里做出体验顺畅、性能良好的应用。
+坚持**清晰与自解释**的代码风格，遵循规范的设计模式与组件解耦原则，从根本上降低系统的维护成本与协作阻力。
 
-### 后端与原生
+坚持**实用导向的技术选型**，拒绝脱离业务场景的技术堆叠与过度设计，以最高效的架构解决最核心的产品诉求。
 
-使用 Java 与 C 实现服务端逻辑与底层程序，保障系统可靠性与性能。熟悉从前端到后端的完整技术链路，能够理解数据如何流动、系统如何协作，让前后端配合得更紧密。
+所有项目交付均包含**完整清晰的工程源码、详尽的部署说明与架构维护文档**，确保系统在交付后具备长期可维护性与扩展能力。
 
-### 游戏开发
+## 04. 合作与推进流程
 
-基于 Unity 与 C# 完成游戏原型与正式版本开发，覆盖完整制作流程。从玩法设计到程序实现，从美术整合到性能优化，让创意变成真正可玩的体验。
+项目合作严格遵循四步闭环推进：前期进行深度**需求拆解与技术选型**，明确业务边界与风险预案；随后进入**敏捷开发与周期迭代**，定期交付可运行版本以同步研发进度；最后通过严格的**全场景测试与代码审查**，完成线上部署交付与源码文档移交。
 
-### 其他合作
+## 05. 联络方式
 
-除了代码，我还做这些：
+如需进一步了解项目案例或探讨商业合作，欢迎通过以下渠道建立连接：
 
-- **短剧** —— 参与短剧的策划与制作，从脚本到成片，用内容讲故事
-- **摄影** —— 记录真实瞬间，擅长人像与场景摄影，并完成后期调色成片
-- **建模** —— 使用三维建模工具制作角色、场景与资产，服务于游戏与视觉
+电子邮箱：[zhaoruiyao7007@gmail.com](mailto:zhaoruiyao7007@gmail.com)
 
----
-
-## 关于我
-
-- 5+ 年开发经验，12+ 个完成项目
-- 技术栈覆盖 HTML、CSS、JavaScript、Vue、Nuxt、Java、C、Unity、C#
-- 注重代码质量与工程规范，确保产品清晰、可维护、体验稳定
-- 相信好的产品来自克制的设计、诚实的交互与干净的代码
-
-## 如何合作
-
-1. **沟通** —— 明确需求、目标与时间安排，对齐项目边界与预期
-2. **提案** —— 评估后提供技术方案、排期与报价，双方确认后启动
-3. **执行** —— 按里程碑分阶段推进，定期同步进度并持续评审
-4. **交付** —— 完成测试与上线支持，交付源码、文档与维护说明
-
-有项目需求、技术咨询或合作意向，欢迎来信，我会尽快回复。
-
----
-
-<p align="center">
-  <a href="mailto:zhaoruiyao7007@gmail.com"><img src="https://img.shields.io/badge/邮箱-0e0e0c?style=for-the-badge&logo=gmail&logoColor=e52521" alt="邮箱"></a>
-  <a href="https://github.com/ZhaoRuiYao-Cat"><img src="https://img.shields.io/badge/GitHub-0e0e0c?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub"></a>
-</p>
+开源主页：[github.com/ZhaoRuiYao-Cat](https://github.com/ZhaoRuiYao-Cat)
