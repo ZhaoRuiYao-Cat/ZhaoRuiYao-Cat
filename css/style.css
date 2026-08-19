@@ -146,6 +146,7 @@ body.js-anim [data-step].in { opacity: 1; transform: none; }
   font-size: 0.66rem; letter-spacing: 0.22em;
   color: var(--ink-3); text-transform: uppercase;
 }
+html[lang="en"] .brand-sub { display: none; }
 
 .site-nav { display: flex; gap: 2.1rem; margin-inline: auto; }
 .site-nav a {
@@ -680,7 +681,7 @@ body.js-anim.loaded .scroll-hint { opacity: 1; }
 .soc-arrow { transition: transform 0.35s var(--ease); }
 .socials a:hover .soc-arrow { transform: translateX(5px); }
 
-.footer { border-top: 1px solid var(--line); padding: 2.1rem 0; }
+.footer { padding: 2.1rem 0; }
 .footer-inner {
   display: flex; justify-content: space-between; align-items: center;
   gap: 1rem; flex-wrap: wrap;
@@ -691,16 +692,22 @@ body.js-anim.loaded .scroll-hint { opacity: 1; }
 
 .step-dots {
   position: fixed; right: 2.2rem; top: 50%; transform: translateY(-50%);
-  z-index: 60; display: flex; flex-direction: column; gap: 0.95rem;
+  z-index: 60; display: flex; flex-direction: column; align-items: center;
+  gap: 0;
 }
 .step-dot {
-  display: block; width: 7px; height: 7px; border-radius: 50%;
-  background: var(--line-strong);
-  transition: background 0.3s var(--ease), height 0.4s var(--ease),
-              border-radius 0.4s var(--ease), transform 0.3s var(--ease);
+  position: relative;
+  display: block; width: 7px; height: 26px;
 }
-.step-dot:hover { background: var(--ink); }
-.step-dot.active { height: 26px; border-radius: 4px; background: var(--ink); }
+.step-dot::before {
+  content: ""; position: absolute; left: 50%; top: 50%;
+  width: 7px; height: 7px;
+  background: var(--line-strong);
+  transform: translate(-50%, -50%);
+  transition: height 0.4s var(--ease), background 0.3s var(--ease);
+}
+.step-dot:hover::before { background: var(--ink); }
+.step-dot.active::before { height: 26px; background: var(--ink); }
 
 .to-top {
   position: fixed; right: 1.4rem; bottom: 1.4rem; z-index: 70;
@@ -717,6 +724,7 @@ body.js-anim.loaded .scroll-hint { opacity: 1; }
 
 /* 非大屏（≤1024px）：仅显示"一起合作？"联系卡，居中合理布局 */
 @media (max-width: 1024px) {
+  html, body { overflow: hidden; height: 100%; }
   main > *:not(.contact) { display: none; }
   .site-nav { display: none; }
   .step-dots { display: none; }
@@ -725,6 +733,7 @@ body.js-anim.loaded .scroll-hint { opacity: 1; }
   .site-header { color: #fff; }
   .site-header .brand { color: #fff; }
   .site-header .brand-sub { color: rgba(255, 255, 255, 0.55); }
+  .sec-idx { display: none; }
   .contact {
     min-height: 100vh;
     min-height: 100svh;
@@ -748,6 +757,19 @@ body.js-anim.loaded .scroll-hint { opacity: 1; }
     padding: 2rem 1.5rem;
     box-sizing: border-box;
   }
+}
+
+/* 桌面端（>1024px）：整屏滚动吸附 + 关于页标题吸附 */
+@media (min-width: 1025px) {
+  html { scroll-snap-type: y proximity; }
+  .hero, .about, .services, .collab, .more, .journey, .contact { scroll-snap-align: start; }
+  .about, .services, .collab, .more, .journey, .contact {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+  }
+  .about-left { position: sticky; top: calc(var(--header-h) + 2.5rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -162,7 +162,10 @@
       ticking = true;
     }
   }, { passive: true });
-  window.addEventListener('resize', updatePhoto);
+  window.addEventListener('resize', function () {
+    updatePhoto();
+    update(); /* 断点切换后立即刷新进度点等滚动状态，避免残留旧高亮 */
+  });
   update();
   updatePhoto();
 
@@ -247,7 +250,9 @@
   }
   doc.querySelectorAll('.lang-select').forEach(function (sel) {
     sel.addEventListener('change', function () {
-      lang = this.value === 'en' ? 'en' : 'zh';
+      var next = this.value === 'en' ? 'en' : 'zh';
+      if (next === lang) return;
+      lang = next;
       applyLang();
     });
   });
